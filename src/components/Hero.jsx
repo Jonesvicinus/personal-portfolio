@@ -15,7 +15,7 @@ export default function Hero() {
             href={personal.github}
             target="_blank"
             rel="noreferrer"
-            title="GitHub"
+            aria-label="GitHub"
           >
             GH
           </a>
@@ -24,14 +24,14 @@ export default function Hero() {
             href={personal.linkedin}
             target="_blank"
             rel="noreferrer"
-            title="LinkedIn"
+            aria-label="LinkedIn"
           >
             LI
           </a>
           <a
             className="hero-social-btn"
             href={`mailto:${personal.email}`}
-            title="Email"
+            aria-label="Email"
           >
             @
           </a>

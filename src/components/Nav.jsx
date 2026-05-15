@@ -51,6 +51,7 @@ export default function Nav({ activeSection }) {
         <button
           className="nav-hamburger"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen(o => !o)}
         >
           <span />
@@ -58,7 +59,7 @@ export default function Nav({ activeSection }) {
           <span />
         </button>
       </nav>
-      <div className={`nav-mobile-menu${menuOpen ? ' open' : ''}`}>
+      <div className={`nav-mobile-menu${menuOpen ? ' open' : ''}`} aria-hidden={!menuOpen}>
         {NAV_LINKS.map(({ label, href }) => (
           <a
             key={href}

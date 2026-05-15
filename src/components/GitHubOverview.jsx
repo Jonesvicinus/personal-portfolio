@@ -17,7 +17,7 @@ export default function GitHubOverview() {
           {repos.map((repo) => (
             <div key={repo.name} className="github-repo-row">
               <div className="github-repo-left">
-                <div className="github-repo-name">{repo.name}</div>
+                <h3 className="github-repo-name">{repo.name}</h3>
                 <div className="github-repo-desc">{repo.desc}</div>
               </div>
               <div className="github-repo-right">

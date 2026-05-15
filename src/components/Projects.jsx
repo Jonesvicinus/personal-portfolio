@@ -20,7 +20,7 @@ export default function Projects() {
               </a>
               <div className="project-card-body">
                 <div className="project-card-num">{project.num}</div>
-                <div className="project-card-title">{project.title}</div>
+                <h3 className="project-card-title">{project.title}</h3>
                 <div className="project-card-desc">{project.desc}</div>
                 <div className="project-card-footer">
                   <div className="project-card-tags">

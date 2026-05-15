@@ -15,6 +15,7 @@ export default function Contact() {
             type="text"
             name="name"
             placeholder="Name"
+            aria-label="Name"
             required
           />
           <input
@@ -22,12 +23,14 @@ export default function Contact() {
             type="email"
             name="email"
             placeholder="Email"
+            aria-label="Email"
             required
           />
           <textarea
             className="contact-field contact-textarea"
             name="message"
             placeholder="Message"
+            aria-label="Message"
             required
           />
           <button type="submit" className="contact-submit">

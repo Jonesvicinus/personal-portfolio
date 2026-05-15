@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <span className="footer-name">{personal.name}</span>
-      <span>© 2026</span>
+      <span>© {new Date().getFullYear()}</span>
       <div className="footer-icons">
         <a href={personal.github} target="_blank" rel="noreferrer" aria-label="GitHub">
           <GitHubIcon />
