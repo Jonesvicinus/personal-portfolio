@@ -1,4 +1,5 @@
 // ─── EDIT THIS FILE to fill in your real content ───────────────────────────
+const base = import.meta.env.BASE_URL
 
 export const personal = {
   name: '[YOUR NAME]',
@@ -17,7 +18,7 @@ export const projects = [
     desc: '[PROJECT_DESC_1 — Two sentences describing what this project does and why you built it.]',
     tags: ['Python', 'TensorFlow', 'Pandas'],
     github: '[GITHUB_URL_1]',
-    image: '/PersonalWebsite/assets/projects/project-1.svg',
+    image: `${base}assets/projects/project-1.svg`,
   },
   {
     num: '02',
@@ -25,7 +26,7 @@ export const projects = [
     desc: '[PROJECT_DESC_2 — Two sentences describing what this project does and why you built it.]',
     tags: ['React', 'Node.js', 'MongoDB'],
     github: '[GITHUB_URL_2]',
-    image: '/PersonalWebsite/assets/projects/project-2.svg',
+    image: `${base}assets/projects/project-2.svg`,
   },
   {
     num: '03',
@@ -33,7 +34,7 @@ export const projects = [
     desc: '[PROJECT_DESC_3 — Two sentences describing what this project does and why you built it.]',
     tags: ['SQL', 'Tableau', 'Python'],
     github: '[GITHUB_URL_3]',
-    image: '/PersonalWebsite/assets/projects/project-3.svg',
+    image: `${base}assets/projects/project-3.svg`,
   },
 ]
 
