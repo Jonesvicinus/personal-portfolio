@@ -2,7 +2,7 @@
 const base = import.meta.env.BASE_URL
 
 export const personal = {
-  name: '[YOUR NAME]',
+  name: 'Jones Vicinus',
   role: 'CS Student · AI · Data Analytics',
   bio: '[BIO_PLACEHOLDER — 2–3 sentences: CS major with a Business Administration minor, AI concentration, and a certificate in Data Analytics & Visualization. Describe what drives you and what you are building toward.]',
   email: '[YOUR EMAIL]',
