@@ -27,8 +27,8 @@ export default function Nav({ activeSection }) {
   }
 
   return (
-    <>
-      <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
+    <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
+      <div className="nav-bar">
         <span className="nav-name">{personal.name}</span>
         <ul className="nav-links">
           {NAV_LINKS.map(({ label, href }) => (
@@ -58,7 +58,7 @@ export default function Nav({ activeSection }) {
           <span />
           <span />
         </button>
-      </nav>
+      </div>
       <div className={`nav-mobile-menu${menuOpen ? ' open' : ''}`} aria-hidden={!menuOpen}>
         {NAV_LINKS.map(({ label, href }) => (
           <a
@@ -74,6 +74,6 @@ export default function Nav({ activeSection }) {
           Resume ↓
         </a>
       </div>
-    </>
+    </nav>
   )
 }

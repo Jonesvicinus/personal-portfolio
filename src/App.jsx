@@ -21,7 +21,7 @@ export default function App() {
       if (!el) return
       const obs = new IntersectionObserver(
         ([entry]) => { if (entry.isIntersecting) setActiveSection(id) },
-        { threshold: 0.3 }
+        { threshold: 0.3, rootMargin: '-57px 0px 0px 0px' }
       )
       obs.observe(el)
       observers.push(obs)

@@ -16,7 +16,7 @@
 
 /* ─── Reset ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--nav-height); }
 body {
   font-family: var(--font-body);
   background: var(--color-bg);
@@ -48,14 +48,16 @@ img { display: block; max-width: 100%; }
   top: 0;
   z-index: 100;
   background: var(--color-bg);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 40px;
   border-bottom: 1px solid transparent;
   transition: border-bottom-color 0.2s;
 }
 .nav.scrolled { border-bottom-color: var(--color-text); }
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+}
 .nav-name {
   font-family: var(--font-body);
   font-size: 13px;
@@ -526,7 +528,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 768px) {
   :root { --section-pad: 48px 20px; }
 
-  .nav { padding: 16px 20px; }
+  .nav-bar { padding: 16px 20px; }
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
   .nav-mobile-menu.open { display: flex; }
