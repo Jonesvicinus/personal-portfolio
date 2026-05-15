@@ -1,11 +1,13 @@
 import { personal, heroTags } from '../data/content'
 
+const base = import.meta.env.BASE_URL
+
 export default function Hero() {
   return (
     <section id="hero" className="hero">
       <div className="hero-sidebar">
         <div className="hero-photo">
-          <div className="hero-photo-placeholder">Photo</div>
+          <img src={`${base}assets/CroppedHeadshot-4-12.png`} alt="Jones Vicinus" className="hero-photo-img" />
         </div>
         <div className="hero-name">{personal.name}</div>
         <div className="hero-role">{personal.role}</div>
