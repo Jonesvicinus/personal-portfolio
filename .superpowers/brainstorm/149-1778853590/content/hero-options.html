@@ -1,0 +1,315 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+  .preview-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  /* ─── OPTION A ─── */
+  .hero-a {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 340px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .hero-a .sidebar {
+    padding: 32px 24px;
+    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .hero-a .photo-box {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: #f0f0f0;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .hero-a .name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #111;
+    text-transform: uppercase;
+  }
+  .hero-a .title {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.5;
+  }
+  .hero-a .socials {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .hero-a .social-icon {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #444;
+    font-weight: 600;
+  }
+  .hero-a .main {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+  .hero-a .headline {
+    font-family: 'DM Serif Display', serif;
+    font-size: 38px;
+    line-height: 1.05;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .hero-a .subtitle-txt {
+    font-size: 12px;
+    color: #0F2D5E;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .hero-a .bio {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    max-width: 460px;
+  }
+  .hero-a .stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+  }
+  .hero-a .stat-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: #0F2D5E;
+  }
+  .hero-a .stat-lbl {
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 2px;
+  }
+  .hero-a .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .hero-a .tag {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0F2D5E;
+    border: 1px solid #0F2D5E;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+
+  /* ─── OPTION B ─── */
+  .hero-b {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    min-height: 340px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .hero-b .sidebar {
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fafafa;
+    border-right: 1px solid #e8e8e8;
+  }
+  .hero-b .photo-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .hero-b .name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hero-b .socials {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+  }
+  .hero-b .social-icon {
+    width: 24px;
+    height: 24px;
+    background: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .hero-b .main {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    border-left: 3px solid #0F2D5E;
+  }
+  .hero-b .headline {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    line-height: 1.0;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+  }
+  .hero-b .headline span { color: #0F2D5E; }
+  .hero-b .bio {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+    max-width: 460px;
+  }
+  .hero-b .stats {
+    display: flex;
+    gap: 24px;
+  }
+  .hero-b .stat {
+    padding: 10px 16px;
+    background: #0F2D5E;
+    color: #fff;
+    border-radius: 2px;
+  }
+  .hero-b .stat-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+  }
+  .hero-b .stat-lbl {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.75;
+    margin-top: 2px;
+  }
+</style>
+
+<h2>Hero section — which direction?</h2>
+<p class="subtitle">Both use your two-column layout (photo sidebar + content). The difference is how navy is applied.</p>
+
+<div style="display: flex; flex-direction: column; gap: 32px; margin-top: 24px;">
+
+  <div>
+    <div class="preview-label">Option A &mdash; Navy as type accent only (minimal, editorial)</div>
+    <div class="hero-a">
+      <div class="sidebar">
+        <div class="photo-box">Photo</div>
+        <div class="name">[Your Name]</div>
+        <div class="title">CS Student · AI · Data Analytics</div>
+        <div class="socials">
+          <div class="social-icon">GH</div>
+          <div class="social-icon">LI</div>
+          <div class="social-icon">@</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="subtitle-txt">Portfolio · 2025</div>
+        <div class="headline">Computer<br>Science<br>Student</div>
+        <div class="bio">CS major with a Business Administration minor, AI concentration, and a certificate in Data Analytics &amp; Visualization.</div>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">React</span><span class="tag">Machine Learning</span><span class="tag">Data Analytics</span>
+        </div>
+        <div class="stats">
+          <div><div class="stat-num">3+</div><div class="stat-lbl">Projects</div></div>
+          <div><div class="stat-num">2</div><div class="stat-lbl">Internships</div></div>
+          <div><div class="stat-num">1</div><div class="stat-lbl">Certificate</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="preview-label">Option B &mdash; Navy as structural element (bolder, more color)</div>
+    <div class="hero-b">
+      <div class="sidebar">
+        <div class="photo-box"></div>
+        <div class="name">[Your Name]</div>
+        <div class="socials">
+          <div class="social-icon">GH</div>
+          <div class="social-icon">LI</div>
+          <div class="social-icon">@</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="headline"><span>Computer</span><br>Science<br>Student</div>
+        <div class="bio">CS major with a Business Administration minor, AI concentration, and a certificate in Data Analytics &amp; Visualization.</div>
+        <div class="stats">
+          <div class="stat"><div class="stat-num">3+</div><div class="stat-lbl">Projects</div></div>
+          <div class="stat"><div class="stat-num">2</div><div class="stat-lbl">Internships</div></div>
+          <div class="stat"><div class="stat-num">1</div><div class="stat-lbl">Certificate</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top: 24px">Click your preferred option above, or describe what you'd like adjusted.</p>
+
+<div class="options" style="margin-top: 0">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content"><h3>Minimal navy accent</h3><p>Navy only on numbers, tags, and small labels. White background dominates. Closest to sawad.framer.website.</p></div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content"><h3>Bold navy elements</h3><p>Navy stat blocks, left border, colored headline word. More visual punch but less austere.</p></div>
+  </div>
+</div>

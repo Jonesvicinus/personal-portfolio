@@ -1,0 +1,28 @@
+<h2>Single-page scroll vs. multi-page routing?</h2>
+<p class="subtitle">Both have the same sticky nav — the difference is what happens when you click a nav link.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Single-page scroll (recommended)</h3>
+      <p>All sections live on one page, stacked vertically. Clicking a nav link smoothly scrolls to that section. URL can optionally update to <code>#projects</code>, <code>#skills</code>, etc.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>Matches the sawad.framer.website feel exactly</li><li>Smooth, editorial scroll experience</li><li>No page loads or flicker</li><li>Simpler code — no router needed</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>All content loads at once (negligible for a portfolio)</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Multi-page routing (React Router)</h3>
+      <p>Each section is its own route: <code>/projects</code>, <code>/skills</code>, etc. Clicking nav links navigates to a new "page" (still client-side, no full reload).</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>Clean URLs per section</li><li>Can deep-link directly to any page</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Loses the smooth scroll feel</li><li>Requires React Router + GitHub Pages hash routing workaround</li><li>Feels more like an app, less like an editorial portfolio</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>

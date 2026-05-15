@@ -1,0 +1,40 @@
+<h2>Which tech stack for your portfolio?</h2>
+<p class="subtitle">All three deploy to GitHub Pages as static files. Pick based on your comfort and maintenance preference.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Single HTML File</h3>
+      <p>One <code>index.html</code> with embedded CSS &amp; JS. Open in browser directly, push to GitHub, done. No build step, no Node.js required.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>Zero setup</li><li>Edit &amp; preview instantly</li><li>Deploy by pushing one file</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>File gets long (600–900 lines)</li><li>No component reuse</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>React + Vite (recommended)</h3>
+      <p>Component-based project with <code>npm run build</code> producing a static <code>dist/</code> folder. Deploy that folder to GitHub Pages via <code>gh-pages</code> action.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>Each section is its own component</li><li>Easy to update content in isolation</li><li>Scales well as site grows</li><li>Hot-reload during dev</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Requires Node.js + npm</li><li>Build step before deploy</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Next.js (static export)</h3>
+      <p>Full Next.js project with <code>output: 'export'</code>. More powerful, but heavier than needed for a portfolio.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul><li>File-based routing feels natural</li><li>Good ecosystem</li></ul></div>
+        <div class="cons"><h4>Cons</h4><ul><li>Overkill for a portfolio</li><li>More config for GitHub Pages</li><li>Slower build</li></ul></div>
+      </div>
+    </div>
+  </div>
+</div>

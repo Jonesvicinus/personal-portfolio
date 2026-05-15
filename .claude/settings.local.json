@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/jonesvicinus/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/**)",
+      "Bash(bash scripts/start-server.sh --project-dir /Users/jonesvicinus/Code/PersonalWebsite)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(npm create *)",
+      "Bash(npx create-vite@latest . --template react)",
+      "Read(//private/tmp/**)",
+      "Bash(rm -rf vite-scaffold)",
+      "Bash(npx create-vite@latest vite-scaffold --template react)",
+      "Bash(npm install *)",
+      "Bash(timeout 10 npm run dev -- --port 5173)",
+      "Bash(git -C /Users/jonesvicinus/Code/PersonalWebsite add -A)",
+      "Bash(git -C /Users/jonesvicinus/Code/PersonalWebsite status)"
+    ]
+  }
+}
