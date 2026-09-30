@@ -18,7 +18,7 @@ export const projects = [
     desc: 'Personal money manager for tracking spending, income, budgets, and savings goals, with statement import, learned merchant memory, and undo/redo. Live at myclearcash.com and open for anyone to use.',
     tags: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Vercel'],
     github: 'https://github.com/Jonesvicinus/ClearCash',
-    image: `${base}assets/projects/project-1.svg`,
+    image: `${base}assets/projects/clearcash.jpg`,
   },
   {
     num: '02',
@@ -34,7 +34,7 @@ export const projects = [
     desc: 'Matches a nonprofit client’s provider records against the 7M-row federal NPI registry, then gives staff a review site with an AI assistant to confirm each match. Built at Bowst for Help Hope Live.',
     tags: ['Python', 'Flask', 'SQLite', 'GPT-4o', 'React'],
     github: 'https://github.com/Jonesvicinus/npi-matching-portfolio',
-    image: `${base}assets/projects/project-3.svg`,
+    image: `${base}assets/projects/npi.jpg`,
   },
 ]
 
