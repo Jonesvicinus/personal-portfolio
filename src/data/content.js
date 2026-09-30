@@ -26,7 +26,7 @@ export const projects = [
     desc: 'Desktop storefront for a printed photo album startup: build an album, upload photos, check out, and order. Inherited a never-launched mobile app, extended its Phoenix API, and built the web app from scratch.',
     tags: ['Next.js', 'Elixir / Phoenix', 'Stripe', 'AWS', 'Docker'],
     github: 'https://github.com/Jonesvicinus/snapshot-photo-albums-web',
-    image: `${base}assets/projects/project-2.svg`,
+    image: `${base}assets/projects/snapshot.jpg`,
   },
   {
     num: '03',
@@ -81,22 +81,10 @@ export const repos = [
     url: 'https://github.com/zqlectric/mission-incompilable',
   },
   {
-    name: 'AlphaMind',
-    desc: 'Stock research engine that normalizes third-party trade alerts and simulates portfolio performance. Research only, no trade execution.',
+    name: 'ClearCash',
+    desc: 'Next.js personal finance app with Supabase auth and per-user row-level security, SQL-first migrations, and a Vitest suite. Live at myclearcash.com.',
     language: 'TypeScript',
-    url: 'https://github.com/Jonesvicinus/AlphaMind',
-  },
-  {
-    name: 'alt-texty',
-    desc: 'SEO and accessibility crawler with AI-generated alt text, meta descriptions, and per-site keyword strategy.',
-    language: 'Python',
-    url: 'https://github.com/Jonesvicinus/alt-texty',
-  },
-  {
-    name: 'AI-Brain',
-    desc: 'Obsidian knowledge vault plus Node scripts and cloud routines that keep project context, lecture notes, and phone memos in sync for Claude Code.',
-    language: 'JavaScript',
-    url: 'https://github.com/Jonesvicinus/AI-Brain',
+    url: 'https://github.com/Jonesvicinus/ClearCash',
   },
 ]
 
