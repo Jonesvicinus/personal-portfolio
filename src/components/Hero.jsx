@@ -60,16 +60,16 @@ export default function Hero() {
         </div>
         <div className="hero-stats">
           <div>
-            <div className="hero-stat-num">3+</div>
-            <div className="hero-stat-lbl">Projects</div>
+            <div className="hero-stat-num">3.88</div>
+            <div className="hero-stat-lbl">GPA</div>
           </div>
           <div>
             <div className="hero-stat-num">2</div>
-            <div className="hero-stat-lbl">Internships</div>
+            <div className="hero-stat-lbl">Live Apps</div>
           </div>
           <div>
-            <div className="hero-stat-num">1</div>
-            <div className="hero-stat-lbl">Certificate</div>
+            <div className="hero-stat-num">2028</div>
+            <div className="hero-stat-lbl">Graduation</div>
           </div>
         </div>
       </div>
