@@ -3,13 +3,14 @@ import './App.css'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import GitHubOverview from './components/GitHubOverview'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-const SECTIONS = ['hero', 'projects', 'skills', 'education', 'github', 'contact']
+const SECTIONS = ['hero', 'projects', 'experience', 'skills', 'education', 'github', 'contact']
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero')
@@ -35,6 +36,7 @@ export default function App() {
       <main>
         <Hero />
         <Projects />
+        <Experience />
         <Skills />
         <Education />
         <GitHubOverview />

@@ -373,6 +373,49 @@ img { display: block; max-width: 100%; }
   color: var(--color-muted);
 }
 
+/* ─── Experience ─── */
+.experience { background: var(--color-bg); border-top: 1px solid var(--color-border); }
+.exp-tags .project-card-tag { background: var(--color-surface); border: 1px solid var(--color-border); }
+.exp-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--color-border);
+}
+.exp-date {
+  font-size: 12px;
+  color: var(--color-text);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.exp-location {
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+.exp-role {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0 0 4px;
+}
+.exp-company { font-size: 14px; color: var(--color-muted); margin-bottom: 14px; }
+.exp-company a { color: var(--color-navy); text-decoration: none; font-weight: 500; }
+.exp-company a:hover { text-decoration: underline; }
+.exp-bullets {
+  margin: 0 0 16px;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text);
+  max-width: 68ch;
+}
+.exp-bullets li + li { margin-top: 6px; }
+.exp-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
 /* ─── Education ─── */
 .education { background: var(--color-bg); }
 .edu-row {
@@ -542,6 +585,8 @@ img { display: block; max-width: 100%; }
   .projects-grid { grid-template-columns: 1fr; }
 
   .skills-grid { grid-template-columns: 1fr; }
+
+  .exp-row { grid-template-columns: 1fr; gap: 12px; }
 
   .edu-row { flex-direction: column; gap: 4px; }
 

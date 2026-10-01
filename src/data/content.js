@@ -38,6 +38,35 @@ export const projects = [
   },
 ]
 
+export const experience = [
+  {
+    role: 'Software Engineer (Freelance)',
+    company: 'SnapShot Photo Albums',
+    url: 'https://snapshotalbums.com',
+    location: 'Summerville, SC · Remote',
+    date: 'June 2026 to Present',
+    bullets: [
+      'Inherited a mobile-only app, in development since 2022 and never launched: assessed the codebase, adapted and extended its Elixir/Phoenix API, and built a desktop Next.js storefront that is live at snapshotalbums.com.',
+      'Built the album builder, photo uploads to S3, Stripe checkout, order tracking, and print-ready export at 300 DPI.',
+      'Own the infrastructure: Docker Compose on EC2, nightly database backups, SES email, and the launch-readiness audit that gates real orders.',
+    ],
+    tags: ['Next.js', 'Elixir / Phoenix', 'PostgreSQL', 'Stripe', 'AWS'],
+  },
+  {
+    role: 'Software Developer Intern',
+    company: 'Bowst',
+    url: 'https://bowst.com',
+    location: 'Software development agency',
+    date: 'May 2026 to August 2026',
+    bullets: [
+      'Built a matching pipeline and staff review site that validated 3,500+ medical centers and 11,800+ professionals for Help Hope Live against the 7M-row NPI registry, with human sign-off on every match, and supported the client presentation to HHL leadership.',
+      'Built NPI Lookup, a natural-language search over the NPPES database: GPT-4o function calling writes the SQL, Node/Express on Railway, React on Netlify.',
+      'Wrote and executed 200+ test cases across client deliverables, documented the root cause and fix options for a live SMS scheduling defect, migrated WordPress content, and presented AI-assisted analysis tools to the team.',
+    ],
+    tags: ['Python', 'Flask', 'Node.js', 'React', 'PostgreSQL', 'OpenAI API'],
+  },
+]
+
 export const skills = [
   { name: 'Python', category: 'Language' },
   { name: 'JavaScript / TypeScript', category: 'Language' },
