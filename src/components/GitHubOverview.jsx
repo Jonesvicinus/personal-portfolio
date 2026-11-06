@@ -4,9 +4,9 @@ export default function GitHubOverview() {
   return (
     <section id="github" className="github-overview">
       <div className="container">
-        <h2 className="section-heading">GitHub Overview</h2>
+        <h2 className="section-heading reveal">GitHub Overview</h2>
         <a
-          className="github-profile-btn"
+          className="github-profile-btn reveal" data-delay="1"
           href={personal.github}
           target="_blank"
           rel="noreferrer"
@@ -15,7 +15,7 @@ export default function GitHubOverview() {
         </a>
         <div className="github-repos">
           {repos.map((repo) => (
-            <div key={repo.name} className="github-repo-row">
+            <div key={repo.name} className="github-repo-row reveal" data-delay="2">
               <div className="github-repo-left">
                 <h3 className="github-repo-name">{repo.name}</h3>
                 <div className="github-repo-desc">{repo.desc}</div>

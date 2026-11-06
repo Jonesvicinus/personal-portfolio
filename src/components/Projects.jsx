@@ -4,42 +4,55 @@ export default function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2 className="section-heading">Recent Projects</h2>
+        <h2 className="section-heading reveal">Recent Projects</h2>
         <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project.num} className="project-card">
-              <a
-                className="project-card-image"
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                aria-label={`View ${project.title} on GitHub`}
-              >
-                <img src={project.image} alt={project.title} />
-                <div className="project-card-overlay">View on GitHub</div>
-              </a>
-              <div className="project-card-body">
-                <div className="project-card-num">{project.num}</div>
-                <h3 className="project-card-title">{project.title}</h3>
-                <div className="project-card-desc">{project.desc}</div>
-                <div className="project-card-footer">
-                  <div className="project-card-tags">
-                    {project.tags.map(tag => (
-                      <span key={tag} className="project-card-tag">{tag}</span>
-                    ))}
-                  </div>
+          {projects.map((project, i) => {
+            const featured = i === 0 && project.image
+            return (
+              <div key={project.num} className={`project-card reveal${featured ? ' project-card--featured' : ''}`} data-delay={i > 0 ? i : undefined}>
+                {project.image && (project.link ? (
                   <a
-                    className="project-card-gh"
-                    href={project.github}
+                    className="project-card-image"
+                    href={project.link}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={`Visit ${project.linkLabel}`}
                   >
-                    GitHub →
+                    <img src={project.image} alt={`${project.title} screenshot`} />
+                    <div className="project-card-overlay">Visit {project.linkLabel}</div>
                   </a>
+                ) : (
+                  <div className="project-card-image">
+                    <img src={project.image} alt={`${project.title} screenshot`} />
+                  </div>
+                ))}
+                <div className="project-card-body">
+                  <div className="project-card-num">
+                    {project.num}{project.meta && ` · ${project.meta}`}
+                  </div>
+                  <h3 className="project-card-title">{project.title}</h3>
+                  <div className="project-card-desc">{project.desc}</div>
+                  <div className="project-card-footer">
+                    <div className="project-card-tags">
+                      {project.tags.map(tag => (
+                        <span key={tag} className="project-card-tag">{tag}</span>
+                      ))}
+                    </div>
+                    {project.link && (
+                      <a
+                        className="project-card-gh"
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {project.linkLabel} →
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

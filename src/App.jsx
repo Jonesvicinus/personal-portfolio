@@ -5,11 +5,11 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Education from './components/Education'
-import GitHubOverview from './components/GitHubOverview'
+import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-const SECTIONS = ['hero', 'projects', 'skills', 'education', 'github', 'contact']
+const SECTIONS = ['hero', 'experience', 'projects', 'skills', 'education', 'contact']
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('hero')
@@ -29,15 +29,32 @@ export default function App() {
     return () => observers.forEach(obs => obs.disconnect())
   }, [])
 
+  useEffect(() => {
+    const revealEls = document.querySelectorAll('.reveal')
+    const revealObs = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            revealObs.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+    )
+    revealEls.forEach(el => revealObs.observe(el))
+    return () => revealObs.disconnect()
+  }, [])
+
   return (
     <>
       <Nav activeSection={activeSection} />
       <main>
         <Hero />
+        <Experience />
         <Projects />
         <Skills />
         <Education />
-        <GitHubOverview />
         <Contact />
       </main>
       <Footer />

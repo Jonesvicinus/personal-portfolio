@@ -3,10 +3,10 @@ import { personal } from '../data/content'
 
 const NAV_LINKS = [
   { label: 'About',     href: '#hero' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects',  href: '#projects' },
   { label: 'Skills',    href: '#skills' },
   { label: 'Education', href: '#education' },
-  { label: 'GitHub',    href: '#github' },
   { label: 'Contact',   href: '#contact' },
 ]
 

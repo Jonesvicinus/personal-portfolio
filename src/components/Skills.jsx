@@ -8,8 +8,8 @@ export default function Skills() {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2 className="section-heading">Tools &amp; Skills</h2>
-        <div className="skills-grid">
+        <h2 className="section-heading reveal">Tools &amp; Skills</h2>
+        <div className="skills-grid reveal" data-delay="1">
           <div>
             {left.map(skill => (
               <div key={skill.name} className="skill-row">
